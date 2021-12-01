@@ -9,7 +9,7 @@ module cutter(cutsize)
 
 module towera(){
 
-import("/Volumes/homes/gwest/cnc/rocketstove/Sidewinder/01.stl");
+import("/Volumes/homes/gwest/3dprint/rocketstove/Sidewinder/01.stl");
 }
 
 module hole()
@@ -69,15 +69,15 @@ module front_plate()
 {
     difference(){
         cube([260,10,140]);
-        translate([15,12,15]) rotate([90,0,0]) cshole();
-        translate([260-15,12,15]) rotate([90,0,0]) cshole();
-        translate([260-15,12,140-15]) rotate([90,0,0]) cshole();
-        translate([15,12,140-15]) rotate([90,0,0]) cshole();
+        translate([15,11,15]) rotate([90,0,0]) cshole();
+        translate([260-15,11,15]) rotate([90,0,0]) cshole();
+        translate([260-15,11,140-15]) rotate([90,0,0]) cshole();
+        translate([15,11,140-15]) rotate([90,0,0]) cshole();
         
-        translate([160-15,12,15]) rotate([90,0,0]) cshole();
-        translate([115,12,15]) rotate([90,0,0]) cshole();
-        translate([160-15,12,65]) rotate([90,0,0]) cshole();
-        translate([115,12,65]) rotate([90,0,0]) cshole();  
+        translate([160-15,11,15]) rotate([90,0,0]) cshole();
+        translate([115,11,15]) rotate([90,0,0]) cshole();
+        translate([160-11,12,65]) rotate([90,0,0]) cshole();
+        translate([115,11,65]) rotate([90,0,0]) cshole();  
         
         translate([430+25,50,-354+11]) rotate([90,-90,0]) towera();
     }

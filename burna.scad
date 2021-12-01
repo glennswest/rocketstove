@@ -11,7 +11,7 @@ module cutter(cutsize)
 
 module burna(){
 
-import("/Volumes/homes/gwest/cnc/rocketstove/Sidewinder/03.stl");
+import("/Volumes/homes/gwest/3dprint/rocketstove/Sidewinder/03.stl");
 }
 
 module hole()
@@ -61,6 +61,17 @@ module burna_mold()
     }
 }
 
+module burna_mold_thin()
+{
+  difference(){
+    cube([185,314,112.655]);
+    translate([-235-40,6.4,342-3]) rotate([360-90,0,0]) burna();
+    rotate([90,90,0]) translate([0,76,-270]) cylinder(r=68,h=120,$fn=100);
+    translate([115-15,-10,140]) rotate([0,45,0])  cube([130,340,90]);
+    translate([230,-50,0]) rotate([0,0,45]) translate([-100,0,-5]) cube([250,150,150]);
+    //holes();
+    }
+}
 module cshole()
 {
     cylinder(r=4.5/2,h=20);
@@ -105,6 +116,8 @@ module back_plate()
 }
 
 //burna();
-burna_mold();
+//burna_mold();
 //front_plate();
 //back_plate();
+
+burna_mold_thin();
