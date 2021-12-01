@@ -21,37 +21,7 @@ module hole()
     cylinder(r=9.6/2,h=5,$fn=5);
     
 }
-module holes()
-{
-    for ( i = [45 : 100 : 275] ){
-      translate([10,i,-1]) hole();
-      translate([250,i,-1]) hole();  
-     % translate([130-25,i,15]) rotate([0,90,0]) cylinder(r=9.6,h=50);  
-      translate([130-25,i,130-3]) rotate([0,90,0]) cylinder(r=9.6,h=50); 
-      
-      
-    } 
-    translate([15,42,15]) rotate([90,0,0]) cylinder(r=4.22/2,h=50);
-    translate([260-15,42,15]) rotate([90,0,0]) cylinder(r=4.22/2,h=50); 
-    translate([260-15,42,140-15]) rotate([90,0,0]) cylinder(r=4.22/2,h=50);
-    translate([15,42,140-15]) rotate([90,0,0]) cylinder(r=4.22/2,h=50); 
-    
-    translate([15,884,15]) rotate([90,0,0]) cylinder(r=4.22/2,h=50);
-    translate([260-15,884,15]) rotate([90,0,0]) cylinder(r=4.22/2,h=50); 
-    translate([260-15,884,140-15]) rotate([90,0,0]) cylinder(r=4.22/2,h=50);
-    translate([15,884,140-15]) rotate([90,0,0]) cylinder(r=4.22/2,h=50); 
-    
-    translate([160-15,884,15]) rotate([90,0,0]) cylinder(r=4.22/2,h=50);
-    translate([115,884,15]) rotate([90,0,0]) cylinder(r=4.22/2,h=50);
-    translate([160-15,884,65]) rotate([90,0,0]) cylinder(r=4.22/2,h=50);
-    translate([115,884,65]) rotate([90,0,0]) cylinder(r=4.22/2,h=50);  
-    
-    translate([160-15,10,15]) rotate([90,0,0]) cylinder(r=4.22/2,h=50);
-    translate([115,10,15]) rotate([90,0,0]) cylinder(r=4.22/2,h=50);
-    translate([160-15,10,65]) rotate([90,0,0]) cylinder(r=4.22/2,h=50);
-    translate([115,10,65]) rotate([90,0,0]) cylinder(r=4.22/2,h=50);  
-       
-}
+
 module burna_mold()
 {
   difference(){
@@ -65,49 +35,45 @@ module burna_thin_screws()
 {
     // Left Side
     translate([174,120-6,56]) rotate([-30,44,0]) translate([0,0,-9]) cylinder(r=3.5,h=20);
-    translate([174,120-6,56]) rotate([-30,44,0]) translate([0,0,3]) cylinder(r=5,h=8);
+    translate([174,120-6,56]) rotate([-30,44,0]) translate([0,0,6.5]) cylinder(r=5,h=8);
     
     translate([174,120-10,56+45]) rotate([-30,44,0]) translate([0,0,-9-35]) cylinder(r=3.5,h=20);
-    translate([174,120-10,56+45]) rotate([-30,44,0]) translate([0,0,3-34]) cylinder(r=5,h=8);
+    translate([174,120-10,56+45]) rotate([-30,44,0]) translate([0,0,5.5-34]) cylinder(r=5,h=8);
     
     translate([174,120-13,56+88]) rotate([-30,44,0]) translate([0,0,-9-72]) cylinder(r=3.5,h=20);
-    translate([174,120-13,56+88]) rotate([-30,44,0]) translate([0,0,3-71]) cylinder(r=5,h=8);
+    translate([174,120-13,56+88]) rotate([-30,44,0]) translate([0,0,5.5-71]) cylinder(r=5,h=8);
 
     // Bottom Edge
     translate([174+12,144,56]) rotate([0,0,0]) translate([0,0,-9-8.5]) cylinder(r=3.5,h=20);
-    translate([174+12,144,56]) rotate([0,0,0]) translate([0,0,3-8.5]) cylinder(r=5,h=8); 
+    translate([174+12,144,56]) rotate([0,0,0]) translate([0,0,6-8.5]) cylinder(r=5,h=8); 
  
     translate([174+12,144,56]) rotate([0,0,0]) translate([0,30,-9-8.5]) cylinder(r=3.5,h=20);
-    translate([174+12,144,56]) rotate([0,0,0]) translate([0,30,3-8.5]) cylinder(r=5,h=8);    
+    translate([174+12,144,56]) rotate([0,0,0]) translate([0,30,6-8.5]) cylinder(r=5,h=8);    
  
     translate([174+12,144,56]) rotate([0,0,0]) translate([0,60,-9-8.5]) cylinder(r=3.5,h=20);
-    translate([174+12,144,56]) rotate([0,0,0]) translate([0,60,3-8.5]) cylinder(r=5,h=8); 
+    translate([174+12,144,56]) rotate([0,0,0]) translate([0,60,6-8.5]) cylinder(r=5,h=8); 
 
     translate([174+12,144,56]) rotate([0,0,0]) translate([0,90,-9-8.5]) cylinder(r=3.5,h=20);
-    translate([174+12,144,56]) rotate([0,0,0]) translate([0,90,3-8.5]) cylinder(r=5,h=8);   
+    translate([174+12,144,56]) rotate([0,0,0]) translate([0,90,6-8.5]) cylinder(r=5,h=8);   
   
     translate([174+12,144,56]) rotate([0,0,0]) translate([0,90,-9-8.5]) cylinder(r=3.5,h=20);
-    translate([174+12,144,56]) rotate([0,0,0]) translate([0,90,3-8.5]) cylinder(r=5,h=8);  
+    translate([174+12,144,56]) rotate([0,0,0]) translate([0,90,6-8.5]) cylinder(r=5,h=8);  
 
     translate([174+12,144,56]) rotate([0,0,0]) translate([0,120,-9-8.5]) cylinder(r=3.5,h=20);
-    translate([174+12,144,56]) rotate([0,0,0]) translate([0,120,3-8.5]) cylinder(r=5,h=8); 
+    translate([174+12,144,56]) rotate([0,0,0]) translate([0,120,6-8.5]) cylinder(r=5,h=8); 
 
     translate([174+12,144,56]) rotate([0,0,0]) translate([0,150,-9-8.5]) cylinder(r=3.5,h=20);
-    translate([174+12,144,56]) rotate([0,0,0]) translate([0,150,3-8.5]) cylinder(r=5,h=8);   
+    translate([174+12,144,56]) rotate([0,0,0]) translate([0,150,6-8.5]) cylinder(r=5,h=8);   
 
    // Right Side
     translate([174,310,56]) rotate([0,45,0]) translate([0,0,-9]) cylinder(r=3.5,h=20);
-    translate([174,310,56]) rotate([0,45,0]) translate([0,0,3]) cylinder(r=5,h=8); 
+    translate([174,310,56]) rotate([0,45,0]) translate([0,0,5]) cylinder(r=5,h=8); 
  
-    translate([174,310,56]) rotate([0,45,0]) translate([0,0,-9]) cylinder(r=3.5,h=20);
-    translate([174,310,56]) rotate([0,45,0]) translate([0,0,3]) cylinder(r=5,h=8);  
-
-
     translate([174,310,56+45]) rotate([0,45,0]) translate([0,0,-9-35]) cylinder(r=3.5,h=20);
-    translate([174,310,56+45]) rotate([0,45,0]) translate([0,0,3-31]) cylinder(r=5,h=8);  
+    translate([174,310,56+45]) rotate([0,45,0]) translate([0,0,7-34]) cylinder(r=5,h=8);  
     
-    translate([174,310,56+88]) rotate([0,45,0]) translate([0,0,-9-92+30]) cylinder(r=3.5,h=20);
-    translate([174,310,56+88]) rotate([0,45,0]) translate([0,0,3-91+30]) cylinder(r=5,h=8);  
+    translate([174,310,56+88]) rotate([0,45,0]) translate([0,0,-9-92+31]) cylinder(r=3.5,h=20);
+    translate([174,310,56+88]) rotate([0,45,0]) translate([0,0,3-91+31]) cylinder(r=5,h=8);  
 
 }
 
@@ -132,53 +98,22 @@ module burna_mold_thin_bottom()
     }
         
 }
-module cshole()
+
+module burna_mold_thin_top()
 {
-    cylinder(r=4.5/2,h=20);
-    cylinder(r=10/2,h=5);
-    
-}
-module front_plate()
-{
+    // front panel is 5.658 thick
     difference(){
-        cube([260,10,140]);
-        translate([15,12,15]) rotate([90,0,0]) cshole();
-        translate([260-15,12,15]) rotate([90,0,0]) cshole();
-        translate([260-15,12,140-15]) rotate([90,0,0]) cshole();
-        translate([15,12,140-15]) rotate([90,0,0]) cshole();
-        
-        translate([160-15,12,15]) rotate([90,0,0]) cshole();
-        translate([115,12,15]) rotate([90,0,0]) cshole();
-        translate([160-15,12,65]) rotate([90,0,0]) cshole();
-        translate([115,12,65]) rotate([90,0,0]) cshole();  
-        
-        translate([430+25,50,-354+11]) rotate([90,-90,0]) burna();
+       burna_mold_thin();
+       translate([115-15,-10,140-8]) rotate([0,45,0]) translate([-70,0,-200])  cube([250,340,200]);
     }
-    
+        
 }
 
-module back_plate()
-{
-    difference(){
-        cube([260,10,140]);
-        translate([15,12,15]) rotate([90,0,0]) cshole();
-        translate([260-15,12,15]) rotate([90,0,0]) cshole();
-        translate([260-15,12,140-15]) rotate([90,0,0]) cshole();
-        translate([15,12,140-15]) rotate([90,0,0]) cshole();
-        
-        translate([160-15,12,15]) rotate([90,0,0]) cshole();
-        translate([115,12,15]) rotate([90,0,0]) cshole();
-        translate([160-15,12,65]) rotate([90,0,0]) cshole();
-        translate([115,12,65]) rotate([90,0,0]) cshole();  
-        
-    }
-    
-}
 
 //burna();
 //burna_mold();
-//front_plate();
-//back_plate();
+
 
 //burna_mold_thin();
-burna_mold_thin_bottom();
+//burna_mold_thin_bottom();
+//burna_mold_thin_top();
