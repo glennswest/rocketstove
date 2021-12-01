@@ -83,7 +83,7 @@ module burna_mold_thin()
   difference(){
     cube([185+6,314+3,112.655]);
     translate([-235-40,6.4,342-3]) rotate([360-90,0,0]) burna();
-    rotate([90,90,0]) translate([0,76,-270]) cylinder(r=68,h=120,$fn=100);
+    translate([0,50,0]) rotate([90,90,0]) translate([0,76,-270]) cylinder(r=68,h=180,$fn=100);
     translate([115-15,-10,140]) rotate([0,45,0])  cube([130,340,90]);
     translate([230,-50,0]) rotate([0,0,45]) translate([-100,0,-5]) cube([250,150,150]);
     burna_thin_screws();
